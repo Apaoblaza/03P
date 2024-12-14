@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Monedas</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <h1>CONVERSOR DE MONEDAS</h1>
+      <h2>Pesos CLP</h2>
+      <input type="text" style="width: 300px" id="clp" />
+      <h3>Moneda a convertir</h3>
+      <div style="display: flex; flex-direction: column; align-items: center">
+        <select style="width: 300px; margin-bottom: 15px" id="divisa">
+          <option value="" disabled selected>Seleccione una moneda</option>
+        </select>
+        <button style="width: 300px" id="buscarbutton">Buscar</button>
+        <h3 id="resultado"></h3>
+      </div>
+    </div>
+    <div class="grafica">
+      <canvas id="myChart"></canvas>
+    </div>
+  </body>
+  <script src="./conversor.js"></script>
+</html>
